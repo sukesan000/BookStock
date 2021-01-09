@@ -6,8 +6,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 
-
+//Entityとは: DBに登録・更新する値を入れておく。DBから取得した値を保持しておく。
 @Entity
 @Table(name="bookdata")
 public class BookData {
